@@ -14,7 +14,7 @@ public class ChangeListenerExample {
         
         // ChangeListener auf Binding registrieren. Das erzwingt nun Eager-Computation.
         // ObservableValue kapselt den Wert..
-        total.addListener((observableValue, oldValue, newValue) 
+        total.addListener((observableValue, oldValue, newValue) // oldValue und newValue werden von addListener bereitgestellt  <--
         		-> System.out.println(observableValue.getValue() + " | " + oldValue + " | " + newValue));
         
         bill1.setAmountDue(200.00);

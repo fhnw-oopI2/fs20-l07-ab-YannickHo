@@ -13,7 +13,7 @@ public final class Starter extends Application {
 		
 		stage.setScene(scene);
 		stage.setResizable(true);
-		stage.setTitle("Event Handler In Action");
+		stage.setTitle("Arbeitsblatt(1)");
 		stage.show();
 	}
 

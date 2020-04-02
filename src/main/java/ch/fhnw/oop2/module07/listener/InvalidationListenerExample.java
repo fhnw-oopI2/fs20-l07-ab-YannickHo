@@ -14,7 +14,7 @@ public class InvalidationListenerExample {
         
         // InvalidationListener auf Binding registrieren.
         // Observable kapselt den Wert nicht.
-        total.addListener(observable -> System.out.println(observable));
+        total.addListener(observable -> System.out.println("1: "+observable));
         
         // Macht das bisher gültige Binding ungültig. Listener wird notifiziert.
         bill1.setAmountDue(200.00);
@@ -24,7 +24,7 @@ public class InvalidationListenerExample {
         
         // Jetzt wird der Wert via Binding berechnet. 
         // Das Binding wird wieder gültig (valid).
-        System.out.println(total.getValue());
+        System.out.println("2: "+total.getValue());
         
         // Durch das Setzen wird es wieder ungültig.
         bill1.setAmountDue(150.00);
@@ -33,6 +33,6 @@ public class InvalidationListenerExample {
         bill2.setAmountDue(250.00);
        
         // ... und wird wieder gültig.
-        System.out.println(total.getValue());
+        System.out.println("3: "+total.getValue());
 	}
 }

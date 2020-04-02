@@ -31,6 +31,6 @@ public class UnidirectionalExample {
 	}
 
 	private static void print(IntegerProperty a, IntegerProperty b) {
-		System.out.println("a: " + a + "Â |Â " + "b: " + b);
+		System.out.println("a: " + a + " | " + "b: " + b);
 	}
 }

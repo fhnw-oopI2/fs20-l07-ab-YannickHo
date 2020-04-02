@@ -1,5 +1,6 @@
 package ch.fhnw.oop2.module07.ab4;
 
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -35,5 +36,7 @@ final class ObservableCollection extends VBox {
 		setPadding(new Insets(20));
 		setSpacing(20);
 		getChildren().addAll(toolBar, listView);
+		                                    // Immer FXCollections. vor die Methode
+		shuffle.setOnAction(event -> FXCollections.shuffle(observableList));
 	}
 }
